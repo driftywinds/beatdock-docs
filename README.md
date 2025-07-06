@@ -7,7 +7,7 @@ The official images do not exist, and I needed one for my Pi, so I cloned the re
 How to use: - 
 
 1. Clone the original [repo](https://github.com/lazaroagomez/BeatDock).
-2. Replace the "image" part of the ```docker-compose.yml``` to ```ghcr.io/driftywinds/beatdock-bot:latest```.
+2. Comment out the ```build``` part of the ```docker-compose.yml``` and add a line for ```image``` and set it to ```ghcr.io/driftywinds/beatdock-bot:latest```.
 3. Follow the docker instructions of the repo (enable Discord intents etc.) and edit/make the ```.env``` file according to the requirements specified.
 4. Within the BeatDock directory run ```docker compose up -d```.
 
